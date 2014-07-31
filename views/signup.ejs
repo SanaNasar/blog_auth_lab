@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+  	<meta char= "UTF-8">
+    <title>Document</title>
+  </head>
+  <body>
+  	 <h1> Sign Up Form </h1>
+  	 <p style ="color:red">
+  	 	<% if(message) {%>
+  	 	<%= message %>
+  	 	<% }%>
+
+  	 <form action="/create" method="post">
+  	 	<p>
+  	 		<label for="username">Username:</label>
+  	 		<input type="text" name="username" id="username" autofocus value="<%= username %>">
+		</p>
+		<p>
+			<label for="password">Password:</label>
+			<input type="password" name="password" id="password">
+		</p>
+		<p>
+			<input type="submit" value="Sign up!">
+		</p>
+  </form>
+    If you have an acount<a href="login">Login!</a>	
+	</body>
+</html>
